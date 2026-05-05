@@ -1,0 +1,16 @@
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 草稿(本地暂存,不推送)
+**/draft-*.md
+**/_draft/
+
+# 大文件(视频/音频单独管理,或用 Git LFS)
+*.mp4
+*.mp3
+*.wav
+*.mov
+
+# 环境
+.env
