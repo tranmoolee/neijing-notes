@@ -1,0 +1,25 @@
+{
+  "article": "04-四种人",
+  "generator": "hermes image_generate (gpt-image-2-medium)",
+  "mapping": {
+    "cover.jpg": "prompt1",
+    "card-01.jpg": "prompt2",
+    "card-02.jpg": "prompt3",
+    "card-03.jpg": "prompt4",
+    "card-04.jpg": "prompt4",
+    "card-05.jpg": "prompt5",
+    "card-06.jpg": "prompt6",
+    "card-07.jpg": "prompt1",
+    "card-08.jpg": "prompt2",
+    "card-09.jpg": "prompt6",
+    "blog-hero.jpg": "prompt6"
+  },
+  "sources": {
+    "prompt1": "/Users/tranmoo/.hermes/cache/images/openai_codex_gpt-image-2-medium_20260506_234849_a83f2043.png",
+    "prompt2": "/Users/tranmoo/.hermes/cache/images/openai_codex_gpt-image-2-medium_20260506_234954_a33f8889.png",
+    "prompt3": "/Users/tranmoo/.hermes/cache/images/openai_codex_gpt-image-2-medium_20260506_235052_22f54c76.png",
+    "prompt4": "/Users/tranmoo/.hermes/cache/images/openai_codex_gpt-image-2-medium_20260506_235137_1cc4230d.png",
+    "prompt5": "/Users/tranmoo/.hermes/cache/images/openai_codex_gpt-image-2-medium_20260506_235227_6b98108e.png",
+    "prompt6": "/Users/tranmoo/.hermes/cache/images/openai_codex_gpt-image-2-medium_20260506_235313_3eb57c86.png"
+  }
+}
