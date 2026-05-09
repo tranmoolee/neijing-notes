@@ -15,10 +15,12 @@
     "images/card-09.jpg",
     "images/blog-hero.jpg"
   ],
-  "updated_at_utc": "2026-05-09T21:52:42.212696Z",
+  "updated_at_utc": "2026-05-09T21:54:29.944993Z",
   "ghost": {
-    "status": "draft_created",
-    "url": "https://www.ileemoo.com/p/9767dd20-b0b2-4ae9-931f-7807be3053cf/"
+    "status": "draft_updated_images_uploaded",
+    "preview_url": "https://www.ileemoo.com/p/9767dd20-b0b2-4ae9-931f-7807be3053cf",
+    "editor_url": "https://www.ileemoo.com/ghost/#/editor/post/69ffaca0fd95270001ba0bd7",
+    "post_id": "69ffaca0fd95270001ba0bd7"
   },
   "wechat": {
     "status": "draft_created",

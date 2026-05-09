@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "images": {
+    "images/card-09.jpg": {
+      "url": "https://www.ileemoo.com/content/images/2026/05/card-09.jpg",
+      "sha256": "4c78f8ebff0ca358d5adfcd0cab65de7ff7b4b97e67f7ee1cce42a2fa3d53141",
+      "updated_at": 1778363647,
+      "width": 1080,
+      "height": 1440,
+      "size_bytes": 308018
+    },
+    "images/card-08.jpg": {
+      "url": "https://www.ileemoo.com/content/images/2026/05/card-08.jpg",
+      "sha256": "52dfe1aa5c6d59f8c158eb7a8d03e71896fc960d488832a34d2092779c1e0199",
+      "updated_at": 1778363648,
+      "width": 1080,
+      "height": 1440,
+      "size_bytes": 563324
+    },
+    "images/card-07.jpg": {
+      "url": "https://www.ileemoo.com/content/images/2026/05/card-07.jpg",
+      "sha256": "3d8206cff5fab4298e694c03d938fe50885eb870f669aa3891697bd167630664",
+      "updated_at": 1778363649,
+      "width": 1080,
+      "height": 1440,
+      "size_bytes": 360476
+    },
+    "images/card-06.jpg": {
+      "url": "https://www.ileemoo.com/content/images/2026/05/card-06-1.jpg",
+      "sha256": "6022a7d6d22778c14e26d11774e12aa96b67dff248a6bda553ec7afeecb781a6",
+      "updated_at": 1778363650,
+      "width": 1080,
+      "height": 1440,
+      "size_bytes": 360384
+    },
+    "images/card-05.jpg": {
+      "url": "https://www.ileemoo.com/content/images/2026/05/card-05-1.jpg",
+      "sha256": "2b417760602b5a5aaf590305250c3da9a925957afd02bfd8059af4904c7902ca",
+      "updated_at": 1778363652,
+      "width": 1080,
+      "height": 1440,
+      "size_bytes": 562345
+    },
+    "images/card-04.jpg": {
+      "url": "https://www.ileemoo.com/content/images/2026/05/card-04-1.jpg",
+      "sha256": "30228f7f6a9b6f3e8213039f90f4e804b6e1bb8e082fcddeec971a4ce8b4c574",
+      "updated_at": 1778363652,
+      "width": 1080,
+      "height": 1440,
+      "size_bytes": 276797
+    },
+    "images/card-03.jpg": {
+      "url": "https://www.ileemoo.com/content/images/2026/05/card-03-1.jpg",
+      "sha256": "28dde63a83568b5a8892f8053bd999d111f3a14ac532303fb5f7917d1345dadf",
+      "updated_at": 1778363653,
+      "width": 1080,
+      "height": 1440,
+      "size_bytes": 266504
+    },
+    "images/card-02.jpg": {
+      "url": "https://www.ileemoo.com/content/images/2026/05/card-02-1.jpg",
+      "sha256": "3ac8cbb29a5feb97589ebdd29a8e3ed83ab77d70d195cbe6389e0ab9aea92774",
+      "updated_at": 1778363654,
+      "width": 1080,
+      "height": 1440,
+      "size_bytes": 275500
+    },
+    "images/card-01.jpg": {
+      "url": "https://www.ileemoo.com/content/images/2026/05/card-01-1.jpg",
+      "sha256": "fa23d87d6a078cdf96c31a266e8eae35102a0351db33d9247e1b335e332e2829",
+      "updated_at": 1778363655,
+      "width": 1080,
+      "height": 1440,
+      "size_bytes": 278726
+    },
+    "images/cover.jpg": {
+      "url": "https://www.ileemoo.com/content/images/2026/05/cover-1.jpg",
+      "sha256": "09cf6d7c6bfb68772e7ad36723e589b983e51cf55788fed0383f5aa6213fd6e3",
+      "updated_at": 1778363656,
+      "width": 1080,
+      "height": 1440,
+      "size_bytes": 313324
+    }
+  }
+}
