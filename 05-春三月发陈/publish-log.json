@@ -15,14 +15,15 @@
     "images/card-09.jpg",
     "images/blog-hero.jpg"
   ],
-  "updated_at_utc": "2026-05-09T16:57:51.634804Z",
+  "updated_at_utc": "2026-05-09T18:27:15.474313Z",
   "ghost": {
     "status": "blocked",
     "reason": "GHOST_URL timeout"
   },
   "wechat": {
-    "status": "blocked",
-    "reason": "invalid credential 40001"
+    "status": "draft_created",
+    "draft_media_id": "RZMihzsPBt_UWxA-8fXHL8GNPVm_ilwFnsc2ItH4lt8UFDiIm7TUXr0ZlHjAsnwe",
+    "thumb_media_id": "RZMihzsPBt_UWxA-8fXHL9kVa9EDoFxtLmKlUQad2wJdiWzZrpsWMaDz9KrYZbfJ"
   },
   "x": {
     "status": "published",
