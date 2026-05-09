@@ -1,7 +1,7 @@
 {
   "title": "第五篇：我以为养生是\"做什么\"，古人说的是\"别挡路\"",
   "slug": "neijing-05-chunsan-yue-fa-chen",
-  "status": "x_published_partial_verify_ghost_blocked_wechat_blocked_xhs_login_required",
+  "status": "ghost_draft_created_wechat_draft_created_x_published_xhs_login_required",
   "images": [
     "images/cover.jpg",
     "images/card-01.jpg",
@@ -15,10 +15,10 @@
     "images/card-09.jpg",
     "images/blog-hero.jpg"
   ],
-  "updated_at_utc": "2026-05-09T18:27:15.474313Z",
+  "updated_at_utc": "2026-05-09T21:52:42.212696Z",
   "ghost": {
-    "status": "blocked",
-    "reason": "GHOST_URL timeout"
+    "status": "draft_created",
+    "url": "https://www.ileemoo.com/p/9767dd20-b0b2-4ae9-931f-7807be3053cf/"
   },
   "wechat": {
     "status": "draft_created",
