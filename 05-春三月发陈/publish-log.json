@@ -1,0 +1,45 @@
+{
+  "title": "第五篇：我以为养生是\"做什么\"，古人说的是\"别挡路\"",
+  "slug": "neijing-05-chunsan-yue-fa-chen",
+  "status": "x_published_partial_verify_ghost_blocked_wechat_blocked_xhs_login_required",
+  "images": [
+    "images/cover.jpg",
+    "images/card-01.jpg",
+    "images/card-02.jpg",
+    "images/card-03.jpg",
+    "images/card-04.jpg",
+    "images/card-05.jpg",
+    "images/card-06.jpg",
+    "images/card-07.jpg",
+    "images/card-08.jpg",
+    "images/card-09.jpg",
+    "images/blog-hero.jpg"
+  ],
+  "updated_at_utc": "2026-05-09T16:57:51.634804Z",
+  "ghost": {
+    "status": "blocked",
+    "reason": "GHOST_URL timeout"
+  },
+  "wechat": {
+    "status": "blocked",
+    "reason": "invalid credential 40001"
+  },
+  "x": {
+    "status": "published",
+    "root_url": "https://x.com/dex1466/status/2053156584042135634",
+    "posts": [
+      "https://x.com/dex1466/status/2053156584042135634",
+      "https://x.com/dex1466/status/2053156656771473853",
+      "https://x.com/dex1466/status/2053156732344410612",
+      "https://x.com/dex1466/status/2053156808387125358",
+      "https://x.com/dex1466/status/2053156884606021946",
+      "https://x.com/dex1466/status/2053156960199987547",
+      "https://x.com/dex1466/status/2053157035483533389"
+    ],
+    "note": "UI showed 7 replies under root, likely includes 8/8; script failed at final verification navigation."
+  },
+  "xiaohongshu": {
+    "status": "login_required",
+    "publisher_url": "https://creator.xiaohongshu.com/publish/publish?source=official"
+  }
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "order": 1,
+    "file": "images/cover.jpg",
+    "source": "/Users/tranmoo/.hermes/cache/images/openai_codex_gpt-image-2-medium_20260509_184638_78ba560d.png",
+    "overlay": "我以为养生是“做什么”\n古人说的是“别挡路”"
+  },
+  {
+    "order": 2,
+    "file": "images/card-01.jpg",
+    "source": "/Users/tranmoo/.hermes/cache/images/openai_codex_gpt-image-2-medium_20260509_184732_3eb14244.png",
+    "overlay": "这段话不是从“你”开始的"
+  },
+  {
+    "order": 3,
+    "file": "images/card-02.jpg",
+    "source": "/Users/tranmoo/.hermes/cache/images/openai_codex_gpt-image-2-medium_20260509_184732_3eb14244.png",
+    "overlay": "不是加法，是减法"
+  },
+  {
+    "order": 4,
+    "file": "images/card-03.jpg",
+    "source": "/Users/tranmoo/.hermes/cache/images/openai_codex_gpt-image-2-medium_20260509_184820_e0d4913c.png",
+    "overlay": "“发陈”——不是重新开始"
+  },
+  {
+    "order": 5,
+    "file": "images/card-04.jpg",
+    "source": "/Users/tranmoo/.hermes/cache/images/openai_codex_gpt-image-2-medium_20260509_184732_3eb14244.png",
+    "overlay": "三句话，全是“别做什么”"
+  },
+  {
+    "order": 6,
+    "file": "images/card-05.jpg",
+    "source": "/Users/tranmoo/.hermes/cache/images/openai_codex_gpt-image-2-medium_20260509_184920_c980a47a.png",
+    "overlay": "春天摔了，后面三棒都慢"
+  },
+  {
+    "order": 7,
+    "file": "images/card-06.jpg",
+    "source": "/Users/tranmoo/.hermes/cache/images/openai_codex_gpt-image-2-medium_20260509_185020_528b5ef4.png",
+    "overlay": "四季，同一个结构"
+  },
+  {
+    "order": 8,
+    "file": "images/card-07.jpg",
+    "source": "/Users/tranmoo/.hermes/cache/images/openai_codex_gpt-image-2-medium_20260509_185020_528b5ef4.png",
+    "overlay": "这篇留的坑"
+  },
+  {
+    "order": 9,
+    "file": "images/card-08.jpg",
+    "source": "/Users/tranmoo/.hermes/cache/images/openai_codex_gpt-image-2-medium_20260509_184920_c980a47a.png",
+    "overlay": "下期预告：夏三月，此谓蕃秀"
+  },
+  {
+    "order": 10,
+    "file": "images/card-09.jpg",
+    "source": "/Users/tranmoo/.hermes/cache/images/openai_codex_gpt-image-2-medium_20260509_184638_78ba560d.png",
+    "overlay": "完整版在博客｜评论区置顶"
+  },
+  {
+    "order": 10,
+    "file": "images/blog-hero.jpg",
+    "source": "/Users/tranmoo/.hermes/cache/images/openai_codex_gpt-image-2-medium_20260509_184638_78ba560d.png",
+    "overlay": "hero"
+  }
+]
