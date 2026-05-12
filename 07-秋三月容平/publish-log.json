@@ -1,0 +1,16 @@
+{
+  "post": "07-秋三月容平",
+  "attempted_at": "2026-05-12",
+  "ghost": {
+    "status": "draft_created",
+    "url": "https://www.ileemoo.com/p/1d897e37-37db-46bb-a8fa-d53a84ae60e3/"
+  },
+  "wechat": {
+    "status": "failed",
+    "error_code": "40164",
+    "message": "invalid ip not in whitelist",
+    "ip": "104.28.161.250",
+    "prepared_html": "wechat.publish.html",
+    "cover": "images/cover.jpg"
+  }
+}
