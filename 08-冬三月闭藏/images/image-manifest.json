@@ -1,0 +1,48 @@
+{
+  "post": "08-冬三月闭藏",
+  "model": "gpt-image-2-medium",
+  "provider": "openai-codex",
+  "generated_at": "2026-05-12",
+  "files": [
+    {
+      "file": "cover.jpg",
+      "prompt": "Prompt1 + 封面叠加文字"
+    },
+    {
+      "file": "card-01.jpg",
+      "prompt": "Prompt2 + 卡1叠加文字"
+    },
+    {
+      "file": "card-02.jpg",
+      "prompt": "Prompt2 + 卡2叠加文字"
+    },
+    {
+      "file": "card-03.jpg",
+      "prompt": "Prompt3 + 叠加文字"
+    },
+    {
+      "file": "card-04.jpg",
+      "prompt": "Prompt4 + 叠加文字"
+    },
+    {
+      "file": "card-05.jpg",
+      "prompt": "Prompt5 + 叠加文字"
+    },
+    {
+      "file": "card-06.jpg",
+      "prompt": "封面风格延展 + 卡6文案叠加"
+    },
+    {
+      "file": "card-07.jpg",
+      "prompt": "文本卡：留坑文案叠加"
+    },
+    {
+      "file": "card-08.jpg",
+      "prompt": "文本卡：下期预告文案叠加"
+    },
+    {
+      "file": "blog-hero.jpg",
+      "prompt": "Prompt1 无字版头图"
+    }
+  ]
+}
