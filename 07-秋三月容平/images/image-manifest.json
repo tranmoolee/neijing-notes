@@ -1,0 +1,18 @@
+{
+  "post": "07-秋三月容平",
+  "model": "gpt-image-2-medium",
+  "provider": "openai-codex",
+  "generated_at": "2026-05-12",
+  "files": [
+    {"file": "cover.jpg", "prompt": "Prompt 1 主封面"},
+    {"file": "card-01.jpg", "prompt": "Prompt 2 秋型人 + 天地换挡"},
+    {"file": "card-02.jpg", "prompt": "Prompt 2 秋型人 + 天地换挡（同图复用）"},
+    {"file": "card-03.jpg", "prompt": "Prompt 3 与鸡俱兴"},
+    {"file": "card-04.jpg", "prompt": "Prompt 4 秋刑"},
+    {"file": "card-05.jpg", "prompt": "Prompt 5 方向掉头"},
+    {"file": "card-06.jpg", "prompt": "Prompt 1 复用（总结卡）"},
+    {"file": "card-07.jpg", "prompt": "Prompt 4 复用（留坑卡）"},
+    {"file": "card-08.jpg", "prompt": "Prompt 3 复用（下期预告卡）"},
+    {"file": "blog-hero.jpg", "prompt": "Prompt 1 复用"}
+  ]
+}
