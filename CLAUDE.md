@@ -15,9 +15,17 @@
 
 ```
 NN-主题/
-├── article.md   ← 博客正文
-├── publish.md   ← 小红书图文 + 配图 Prompt + 标签
-└── images/      ← 配图存放位置
+├── article.md            ← 博客正文（母稿）
+├── publish.md            ← 小红书图文 + 配图 Prompt + 标签
+├── images/               ← 配图存放位置
+├── audio/                ← 音频（播客/语音稿）
+├── video/                ← 视频（剪辑素材/成片）
+├── ghost.md              ← Ghost 博客发布稿（含 frontmatter）
+├── wechat.md             ← 微信公众号发布稿
+├── wechat.publish.html   ← 公众号排版 HTML
+├── x.md                  ← X/Twitter 线程稿
+├── xhs-publish-pack/     ← 小红书手机手发包（图片+文案）
+└── publish-log.json      ← 各平台发布状态记录
 ```
 
 ## 新增一篇的标准流程
