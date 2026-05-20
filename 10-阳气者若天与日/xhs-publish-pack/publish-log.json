@@ -1,0 +1,21 @@
+{
+  "article": "10-阳气者若天与日",
+  "generated_at": "2026-05-20T21:30:02.742271",
+  "provider": "openai-codex/gpt-image-2-medium",
+  "outputs": {
+    "images_dir": "/Users/tranmoo/projects/gitea-projects/writing/neijing-notes/10-阳气者若天与日/images",
+    "xhs_pack": "/Users/tranmoo/projects/gitea-projects/writing/neijing-notes/10-阳气者若天与日/xhs-publish-pack",
+    "cards": 8,
+    "files": [
+      "cover.jpg",
+      "card-01.jpg",
+      "card-02.jpg",
+      "card-03.jpg",
+      "card-04.jpg",
+      "card-05.jpg",
+      "card-06.jpg",
+      "card-07.jpg"
+    ]
+  },
+  "status": "ready_for_mobile_publish"
+}

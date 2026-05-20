@@ -1,0 +1,42 @@
+{
+  "style": "realistic photography + natural light + film look",
+  "generated_at": "2026-05-20T21:30:02.742360",
+  "images": [
+    {
+      "file": "cover.jpg",
+      "source": "image_generate"
+    },
+    {
+      "file": "card-01.jpg",
+      "source": "image_generate"
+    },
+    {
+      "file": "card-02.jpg",
+      "source": "image_generate"
+    },
+    {
+      "file": "card-03.jpg",
+      "source": "image_generate"
+    },
+    {
+      "file": "card-04.jpg",
+      "source": "image_generate"
+    },
+    {
+      "file": "card-05.jpg",
+      "source": "image_generate"
+    },
+    {
+      "file": "card-06.jpg",
+      "source": "image_generate"
+    },
+    {
+      "file": "card-07.jpg",
+      "source": "image_generate"
+    },
+    {
+      "file": "blog-hero.jpg",
+      "source": "image_generate"
+    }
+  ]
+}
