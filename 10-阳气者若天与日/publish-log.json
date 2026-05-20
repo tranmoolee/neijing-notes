@@ -1,6 +1,6 @@
 {
   "article": "10-阳气者若天与日",
-  "updated_at": "2026-05-20T21:31:00+02:00",
+  "updated_at": "2026-05-20T23:54:02.261111",
   "platforms": {
     "ghost": {
       "status": "draft_created",
@@ -12,7 +12,13 @@
     "wechat": {
       "status": "blocked_ip_whitelist",
       "error": "40164 invalid ip not in whitelist",
-      "details": "invalid ip 95.120.120.50 not in whitelist"
+      "details": "invalid ip 95.120.120.50 not in whitelist (retry failed)"
+    },
+    "x": {
+      "status": "posted",
+      "mode": "single_post_fallback",
+      "evidence_screenshot": "/tmp/x-post-result.png",
+      "note": "thread publish failed due to X overlay intercept on addButton; fallback single post succeeded"
     }
   },
   "image_order": {
