@@ -1,0 +1,30 @@
+{
+  "article": "10-阳气者若天与日",
+  "updated_at": "2026-05-20T21:31:00+02:00",
+  "platforms": {
+    "ghost": {
+      "status": "draft_created",
+      "slug": "neijing-notes-10-yang-qi-zhe-ruo-tian-yu-ri",
+      "id": "6a0e17ac399d9900013f5f80",
+      "preview_url": "https://www.ileemoo.com/p/97a0e3d6-b0cd-4988-8a2b-43bf83a7a895",
+      "editor_url": "https://www.ileemoo.com/ghost/#/editor/post/6a0e17ac399d9900013f5f80"
+    },
+    "wechat": {
+      "status": "blocked_ip_whitelist",
+      "error": "40164 invalid ip not in whitelist",
+      "details": "invalid ip 95.120.120.50 not in whitelist"
+    }
+  },
+  "image_order": {
+    "cover": "images/cover.jpg",
+    "body": [
+      "images/card-01.jpg",
+      "images/card-02.jpg",
+      "images/card-03.jpg",
+      "images/card-04.jpg",
+      "images/card-05.jpg",
+      "images/card-06.jpg",
+      "images/card-07.jpg"
+    ]
+  }
+}
