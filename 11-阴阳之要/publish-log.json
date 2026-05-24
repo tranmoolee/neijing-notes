@@ -1,0 +1,24 @@
+{
+  "ghost": {
+    "status": "published_manual_by_user",
+    "slug": "neijing-notes-11-yin-yang-zhi-yao",
+    "preview_url": "https://www.ileemoo.com/p/ab87b2e9-025d-4076-8425-488b07a9a42e",
+    "post_id": "6a134b5e399d9900013f5f96"
+  },
+  "wechat": {
+    "status": "draft_created",
+    "title": "第十一篇：\"阴平阳秘\"不是五五开，我理解错了很久",
+    "media_id": "RZMihzsPBt_UWxA-8fXHL9g2XOWTot43wfN6gA-w-WyOxPUendUSJy4rdNS6mV5s",
+    "thumb_media_id": "RZMihzsPBt_UWxA-8fXHL1mKgMahqG-B-z8b9rjX7LGhO0GplnBSeETvOowhJ8z0",
+    "content_images_uploaded": 8
+  },
+  "x": {
+    "status": "submitted_unverified",
+    "mode": "thread_7_posts",
+    "evidence": [
+      "/tmp/x-before-type.png",
+      "/tmp/x-post-result.png"
+    ],
+    "note": "Playwright returned exit_code 0 but reported state uncertain after click."
+  }
+}
