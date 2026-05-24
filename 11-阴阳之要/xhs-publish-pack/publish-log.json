@@ -1,0 +1,18 @@
+{
+  "post": "11-阴阳之要",
+  "package": "xhs-publish-pack",
+  "status": "ready_for_mobile_publish",
+  "generated_at": "2026-05-24",
+  "images": [
+    "images/cover.jpg",
+    "images/card-01.jpg",
+    "images/card-02.jpg",
+    "images/card-03.jpg",
+    "images/card-04.jpg",
+    "images/card-05.jpg",
+    "images/card-06.jpg",
+    "images/card-07.jpg",
+    "images/card-08.jpg"
+  ],
+  "notes": "one-shot override: user explicitly requested push to GitHub third-party remote"
+}
