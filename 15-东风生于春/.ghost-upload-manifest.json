@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "images": {
+    "images/cover.jpg": {
+      "url": "https://www.ileemoo.com/content/images/2026/05/cover-8.jpg"
+    },
+    "images/card-01.jpg": {
+      "url": "https://www.ileemoo.com/content/images/2026/05/card-01-8.jpg"
+    },
+    "images/card-02.jpg": {
+      "url": "https://www.ileemoo.com/content/images/2026/05/card-02-8.jpg"
+    },
+    "images/card-03.jpg": {
+      "url": "https://www.ileemoo.com/content/images/2026/05/card-03-8.jpg"
+    },
+    "images/card-04.jpg": {
+      "url": "https://www.ileemoo.com/content/images/2026/05/card-04-8.jpg"
+    },
+    "images/card-05.jpg": {
+      "url": "https://www.ileemoo.com/content/images/2026/05/card-05-8.jpg"
+    },
+    "images/card-06.jpg": {
+      "url": "https://www.ileemoo.com/content/images/2026/05/card-06-8.jpg"
+    },
+    "images/card-07.jpg": {
+      "url": "https://www.ileemoo.com/content/images/2026/05/card-07-7.jpg"
+    }
+  }
+}
