@@ -1,19 +1,14 @@
 {
-  "ghost": {
-    "status": "draft_created",
-    "updated_at": "2026-05-29T16:45:04.750186+00:00",
-    "editor_url": "https://www.ileemoo.com/ghost/#/editor/post/6a19c28fccf9e1000124aca6",
-    "preview_url": "https://www.ileemoo.com/p/0436f68f-bf2c-4924-a72c-02d2ea718b28/",
-    "post_id": "6a19c28fccf9e1000124aca6",
-    "slug": "neijing-15-dongfeng-sheng-yu-chun",
-    "image_count": 8
+  "xhs_pack_regenerated": true,
+  "images_regenerated": {
+    "cover": "openai_codex_gpt-image-2-medium",
+    "card-01": "pillow_gen_cards_py",
+    "card-02": "openai_codex_gpt-image-2-medium",
+    "card-03": "pillow_gen_cards_py",
+    "card-04": "openai_codex_gpt-image-2-medium",
+    "card-05": "openai_codex_gpt-image-2-medium",
+    "card-06": "openai_codex_gpt-image-2-medium",
+    "card-07": "openai_codex_gpt-image-2-medium"
   },
-  "wechat": {
-    "status": "draft_created",
-    "updated_at": "2026-05-29T18:27:46.093061+00:00",
-    "draft_media_id": "RZMihzsPBt_UWxA-8fXHLyBVhDaCpO6_U3skY6su63NY2XHAFzEqDahLkNoBISyp",
-    "title": "第十五篇：五脏GPS",
-    "cover": "cover.jpg",
-    "content_images": 7
-  }
+  "regenerated_at": "2026-05-29T22:30:00+00:00"
 }
