@@ -29,9 +29,11 @@
   },
   "wechat": {
     "status": "draft_created",
-    "updated_at": "2026-06-01T14:09:03.248309+00:00",
-    "draft_media_id": "RZMihzsPBt_UWxA-8fXHL2hKnNLHyyx00vl4KjoTIQ4eHfqGEJAyi7uyPvBH8Ffx",
+    "updated_at": "2026-06-01T14:17:39.148520+00:00",
+    "draft_media_id": "RZMihzsPBt_UWxA-8fXHL7S6MOddVKzWisf1zFRTGVskKSl8B8PltleaRfZeYPSA",
     "title": "第十五篇：古人给五脏",
+    "digest": "写在最前：这是我读《黄帝内经》的学习",
+    "method": "clean_utf8_json",
     "content_images": 7
   }
 }
