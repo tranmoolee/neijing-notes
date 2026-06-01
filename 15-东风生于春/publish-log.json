@@ -12,11 +12,10 @@
   },
   "regenerated_at": "2026-05-29T22:30:00+00:00",
   "images": {
-    "status": "regenerated",
-    "updated_at": "2026-06-01T11:15:05.210605+00:00",
+    "status": "regenerated_with_text",
+    "updated_at": "2026-06-01T11:49:20.635362+00:00",
     "method": "gpt-image-2-medium",
     "count": 8,
-    "timestamp": "2026-06-01T13:14:00Z",
-    "note": "All 8 images regenerated via gpt-image-2 portrait, no Chinese text in images"
+    "note": "All 8 images generated with Chinese text directly in image, no post-processing overlay"
   }
 }
