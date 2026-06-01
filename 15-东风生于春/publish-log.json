@@ -17,5 +17,14 @@
     "method": "gpt-image-2-medium",
     "count": 8,
     "note": "All 8 images generated with Chinese text directly in image, no post-processing overlay"
+  },
+  "ghost": {
+    "status": "draft_created",
+    "updated_at": "2026-06-01T14:03:13.545176+00:00",
+    "editor_url": "https://www.ileemoo.com/ghost/#/editor/post/6a1d9121ccf9e1000124acbb",
+    "preview_url": "https://www.ileemoo.com/p/847ea41a-3e2b-42a1-b742-329da28571da/",
+    "post_id": "6a1d9121ccf9e1000124acbb",
+    "slug": "neijing-15-dongfeng-sheng-yu-chun-2",
+    "image_count": 8
   }
 }
