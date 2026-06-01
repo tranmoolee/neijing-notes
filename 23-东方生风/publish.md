@@ -8,7 +8,7 @@
 
 **生图描述:**
 ```
-An overhead flat-lay photograph of a hand-drawn diagram on aged rice paper: a circular five-element chart with Chinese characters, connected by arrows showing generation and control cycles. Surrounding the paper: a small cup of green tea, a calligraphy brush, and dried herbs. Warm natural light from above. Shot on Kodak Portra 400, 50mm macro lens, soft grain. Warm parchment tones. 3:4 aspect ratio.
+An overhead flat-lay photograph on aged rice paper: a circular five-element diagram drawn in ink, its five points each marked by a small natural object (a sprig of green leaf, a glowing red ember, a pinch of yellow earth, a smooth white stone, a drop of dark water), connected by faint ink arrows forming a cycle — no written words. Surrounding the paper: a small cup of green tea, a calligraphy brush, and dried herbs. Warm natural light from above. Shot on Kodak Portra 400, 50mm macro lens, soft grain. Warm parchment tones. No text, letters, characters, captions, or watermark anywhere in the image. 3:4 aspect ratio.
 ```
 
 **封面叠加文字:**

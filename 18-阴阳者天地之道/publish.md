@@ -9,7 +9,7 @@
 
 **生图描述:**
 ```
-Abstract minimalist photograph of steam rising from a hot cup of tea on a cold morning, with frost crystals visible on the window behind. The steam (yang/qi) rises while condensation droplets (yin/form) slide down the glass. Soft natural morning light from the left. Shot on Kodak Portra 400, 50mm lens, shallow depth of field. Warm-cool contrast between the steam and frost. 3:4 aspect ratio.
+Abstract minimalist photograph of steam rising from a hot cup of tea on a cold morning, with frost crystals visible on the window behind. The steam (yang/qi) rises while condensation droplets (yin/form) slide down the glass. Soft natural morning light from the left. Shot on Kodak Portra 400, 50mm lens, shallow depth of field. Warm-cool contrast between the steam and frost. No text, letters, captions, or watermark anywhere in the image. 3:4 aspect ratio.
 ```
 
 **封面叠加文字:**

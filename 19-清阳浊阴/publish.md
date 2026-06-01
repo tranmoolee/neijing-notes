@@ -9,7 +9,7 @@
 
 **生图描述:**
 ```
-A sunlit indoor scene: morning light streaming through a tall window, illuminating dust particles floating upward while a glass of water sits on a dark wooden table below, with condensation droplets sliding down. The contrast between the rising light particles (clear yang) and the descending water drops (turbid yin). Shot on Fujifilm Pro 400H, natural light, soft grain, 35mm lens. 3:4 aspect ratio.
+A sunlit indoor scene: morning light streaming through a tall window, illuminating dust particles floating upward while a glass of water sits on a dark wooden table below, with condensation droplets sliding down. The contrast between the rising light particles (clear yang) and the descending water drops (turbid yin). Shot on Fujifilm Pro 400H, natural light, soft grain, 35mm lens. No text, letters, captions, or watermark anywhere in the image. 3:4 aspect ratio.
 ```
 
 **封面叠加文字:**

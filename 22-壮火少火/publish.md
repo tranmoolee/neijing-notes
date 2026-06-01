@@ -8,7 +8,7 @@
 
 **生图描述:**
 ```
-A clay pot simmering on a very low, gentle blue flame on a gas stove, with rich golden broth visible inside and delicate steam rising. Next to it, a burnt pot on a high roaring flame with smoke and charred residue. Strong contrast between the two. Warm kitchen light, rustic wooden surface. Shot on Kodak Portra 400, natural light, 50mm lens, soft grain. 3:4 aspect ratio.
+A clay pot simmering on a very low, gentle blue flame on a gas stove, with rich golden broth visible inside and delicate steam rising. Next to it, a burnt pot on a high roaring flame with smoke and charred residue. Strong contrast between the two. Warm kitchen light, rustic wooden surface. Shot on Kodak Portra 400, natural light, 50mm lens, soft grain. No text, letters, captions, or watermark anywhere in the image. 3:4 aspect ratio.
 ```
 
 **封面叠加文字:**

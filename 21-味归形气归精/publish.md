@@ -8,7 +8,7 @@
 
 **生图描述:**
 ```
-A rustic kitchen scene: various spices and herbs arranged on a wooden cutting board — fresh ginger, dried chilies, star anise, mint leaves, dried tangerine peel. Warm afternoon light from a side window. Each ingredient casts a soft shadow. Shot on Fujifilm Pro 400H, natural light, 50mm lens, shallow depth of field. Warm earth tones. 3:4 aspect ratio.
+A rustic kitchen scene: various spices and herbs arranged on a wooden cutting board — fresh ginger, dried chilies, star anise, mint leaves, dried tangerine peel. Warm afternoon light from a side window. Each ingredient casts a soft shadow. Shot on Fujifilm Pro 400H, natural light, 50mm lens, shallow depth of field. Warm earth tones. No text, letters, captions, or watermark anywhere in the image. 3:4 aspect ratio.
 ```
 
 **封面叠加文字:**

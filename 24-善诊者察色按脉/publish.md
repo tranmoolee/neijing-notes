@@ -8,7 +8,7 @@
 
 **生图描述:**
 ```
-A close-up of two hands: one person's wrist resting on a small silk cushion, another person's three fingers gently placed on the wrist taking a pulse. Warm, soft natural light from a window. The scene is calm and focused. A small teacup and an open book with Chinese text are blurred in the background. Shot on Kodak Portra 400, 85mm lens, shallow depth of field, soft grain. Warm skin tones. 3:4 aspect ratio.
+A close-up of two hands: one person's wrist resting on a small silk cushion, another person's three fingers gently placed on the wrist taking a pulse. Warm, soft natural light from a window. The scene is calm and focused. A small teacup and an open antique book are blurred in the background (faint classical characters on the book pages are acceptable, kept soft and out of focus). Shot on Kodak Portra 400, 85mm lens, shallow depth of field, soft grain. Warm skin tones. No other text, captions, labels, or watermark anywhere in the image. 3:4 aspect ratio.
 ```
 
 **封面叠加文字:**

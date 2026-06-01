@@ -8,7 +8,7 @@
 
 **生图描述:**
 ```
-An open window in a Mediterranean-style room, sheer white curtain billowing inward with a breeze. Outside: blue sky, olive trees, distant mountains. A person sitting nearby takes a deep breath, eyes closed. Morning light fills the room. Shot on Kodak Portra 400, natural light, 35mm lens, soft grain. Warm golden tones. 3:4 aspect ratio.
+An open window in a Mediterranean-style room, sheer white curtain billowing inward with a breeze. Outside: blue sky, olive trees, distant mountains. A person sitting nearby takes a deep breath, eyes closed. Morning light fills the room. Shot on Kodak Portra 400, natural light, 35mm lens, soft grain. Warm golden tones. No text, letters, captions, or watermark anywhere in the image. 3:4 aspect ratio.
 ```
 
 **封面叠加文字:**
