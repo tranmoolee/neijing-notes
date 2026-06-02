@@ -1,0 +1,22 @@
+{
+  "article": "生气通天论-小结",
+  "generated_at": "2026-06-02T23:26:00.000000",
+  "provider": "openai-codex/gpt-image-2-medium",
+  "outputs": {
+    "images_dir": "images",
+    "xhs_pack": "xhs-publish-pack",
+    "cards": 8,
+    "files": [
+      "cover.jpg",
+      "card-01.jpg",
+      "card-02.jpg",
+      "card-03.jpg",
+      "card-04.jpg",
+      "card-05.jpg",
+      "card-06.jpg",
+      "card-07.jpg",
+      "card-08.jpg"
+    ]
+  },
+  "status": "ready_for_mobile_publish"
+}

@@ -9,5 +9,5 @@
 - card-07 → 七、古人找病因，方向和我们相反（没有一味药）
 - card-08 → 八、它讲的是减法，不是加法（收束）
 
-封面策略：cover.png 仅作为 Ghost feature_image，不在正文重复插入。
+封面策略：cover.jpg 仅作为 Ghost feature_image，不在正文重复插入。
 图像工作流：image-2 生无字国风画面，标题后期叠加（详见 publish.md）。
