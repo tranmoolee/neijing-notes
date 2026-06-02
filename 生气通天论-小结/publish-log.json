@@ -1,0 +1,20 @@
+{
+  "ghost": {
+    "status": "pending",
+    "updated_at": null,
+    "slug": "neijing-shengqitongtian-review",
+    "preview_url": null,
+    "editor_url": null
+  },
+  "wechat": {
+    "status": "pending",
+    "updated_at": null,
+    "media_id": null
+  },
+  "x": {
+    "status": "pending",
+    "updated_at": null,
+    "root_url": null,
+    "verification": null
+  }
+}
