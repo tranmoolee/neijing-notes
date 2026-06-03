@@ -1,27 +1,27 @@
 {
   "article": "生气通天论-小结",
-  "generated_at": "2026-06-02T23:26:00.000000",
-  "description": "Ghost blog feature image + 8 section card images for 生气通天论-小结",
+  "generated_at": "2026-06-03T10:20:00.000000",
+  "description": "Ghost blog feature image + 8 section card images for 生气通天论-小结 (brighter version)",
   "provider": "openai-codex/gpt-image-2-medium",
   "files": [
     {
       "name": "cover.jpg",
-      "prompt": "一盏旧油灯在深色木桌上将燃未燃",
+      "prompt": "一盏旧油灯在浅色木桌上，窗外晨光照入",
       "section": "Ghost feature image / XHS cover"
     },
     {
       "name": "card-01.jpg",
-      "prompt": "一扇半掩的旧木门，门缝透进一线晨光",
+      "prompt": "一扇半掩的旧木门，门缝透进明亮晨光",
       "section": "一、自伤"
     },
     {
       "name": "card-02.jpg",
-      "prompt": "老式手摇发电机放在暗色木桌上",
+      "prompt": "老式手摇发电机放在浅色木桌上，旁边烛火",
       "section": "二、阳气电源"
     },
     {
       "name": "card-03.jpg",
-      "prompt": "古铜色天平放在木桌上，轻微不平衡",
+      "prompt": "古铜色天平放在木桌上轻微不平衡",
       "section": "三、阴平阳秘"
     },
     {
@@ -31,7 +31,7 @@
     },
     {
       "name": "card-05.jpg",
-      "prompt": "古铜小香炉微火慢燃，暗红色墨迹泼溅",
+      "prompt": "古铜小香炉慢火燃烧，墨迹晕染",
       "section": "五、煎厥与薄厥"
     },
     {
@@ -46,7 +46,7 @@
     },
     {
       "name": "card-08.jpg",
-      "prompt": "木案上两叠东西——堆积杂物 vs 简洁灯与古籍",
+      "prompt": "木案上两叠东西——杂乱vs简洁灯与古籍",
       "section": "八、减法"
     }
   ]
