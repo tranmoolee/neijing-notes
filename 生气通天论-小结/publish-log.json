@@ -1,20 +1,17 @@
 {
+  "workflow": "v3",
+  "generated_at": "2026-06-03T21:50:00+02:00",
+  "steps": {
+    "images": {"status": "done", "count": 9, "style": "bright-warm"},
+    "overlay": {"status": "done", "method": "social-card", "output": "img-temp/"},
+    "review": {"status": "approved"},
+    "xhs_pack": {"status": "ready", "path": "xhs-publish-pack/images/"}
+  },
   "ghost": {
-    "status": "pending",
-    "updated_at": null,
+    "status": "draft_ready",
     "slug": "neijing-shengqitongtian-review",
-    "preview_url": null,
     "editor_url": null
   },
-  "wechat": {
-    "status": "pending",
-    "updated_at": null,
-    "media_id": null
-  },
-  "x": {
-    "status": "pending",
-    "updated_at": null,
-    "root_url": null,
-    "verification": null
-  }
+  "wechat": {"status": "pending"},
+  "x": {"status": "pending"}
 }
