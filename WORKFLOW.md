@@ -38,6 +38,20 @@ git pull origin main
 - 读取小红书发布图片（审核通过的图）
 - 生成 Ghost draft（含 frontmatter + 图片引用）
 
+### 6) 生成公众号草稿（图文混排版）
+- 读取 `wechat.md` 中的文章正文（纯文字，无 HTML）
+- 读取 `xhs-publish-pack/images/` 中的叠字图（审核通过的图）
+- 上传叠字图到微信素材库（封面用永久素材，内容图用临时 CDN）
+- 正文 = 文章文字段落 + 干净 `<img>` 配图穿插
+- 排版特点：
+  - **文字是可编辑的真实正文**（叠在图上）
+  - **配图是有字的叠图版**（social-card 生成的）
+  - 无复杂自定义样式，保持微信原生排版感
+
+```bash
+python3 <post-dir>/wechat_draft_clean.py
+```
+
 ---
 
 ## 目录约定
@@ -49,10 +63,11 @@ git pull origin main
 ├── xhs-publish-pack/    ← 审核通过后的小红书发布图片
 │   └── images/
 ├── article.md           ← 博客正文母稿
-├── publish.md           ← 小红书文案 + 生图提示词
-├── ghost.md             ← Ghost 博客发布稿
-├── wechat.md            ← 公众号发布稿
-├── x.md                 ← X/Twitter 线程稿
+├── publish.md            ← 小红书文案 + 生图提示词
+├── ghost.md              ← Ghost 博客发布稿
+├── wechat.md             ← 公众号发布稿
+├── wechat_draft_clean.py ← 公众号草稿发布脚本（图文混排版）
+├── x.md                  ← X/Twitter 线程稿
 └── publish-log.json     ← 各平台发布状态
 ```
 
@@ -78,13 +93,13 @@ python3 scripts/neijing_workflow.py update-log \
 
 ## 推荐发布顺序
 1. Ghost draft（先验证标题与图片）
-2. WeChat draft（确认图片顺序一致）
+2. 公众号草稿（先发，和 Ghost 互相校对）
 3. X 线程
 4. 小红书（手机包手发）
 
 ## Git 提交规范
 ```bash
-git add <post-dir>/images <post-dir>/img-temp <post-dir>/xhs-publish-pack <post-dir>/ghost.md publish-log.json
-git commit -m "<post-dir>: 生图+叠字+ghost draft"
+git add <post-dir>/images <post-dir>/img-temp <post-dir>/xhs-publish-pack <post-dir>/ghost.md <post-dir>/wechat_draft_clean.py publish-log.json
+git commit -m "<post-dir>: 生图+叠字+ghost draft+公众号草稿"
 git push origin main
 ```
