@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>生气通天论小结 · Social Cards</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #1a1a1a; display: flex; flex-direction: column; align-items: center; gap: 32px; padding: 32px; }
+
+/* Each card: 1080x1440 (3:4) with full-bleed background image */
+.card {
+  position: relative;
+  width: 1080px;
+  height: 1440px;
+  overflow: hidden;
+  font-family: 'Noto Serif SC', 'Songti SC', serif;
+}
+
+/* Background image fills the card */
+.card .bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Dark gradient overlay at bottom for readability */
+.card .overlay {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 55%;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.65) 20%, rgba(0,0,0,.85) 60%, rgba(0,0,0,.95) 100%);
+}
+
+/* Content sits on top */
+.card .content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 80px 72px;
+  z-index: 2;
+}
+
+/* ===== Card-specific text styles ===== */
+
+/* Cover */
+.cover .kicker {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 22px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.45);
+  margin-bottom: 20px;
+}
+.cover .main-title {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.3;
+  color: #f0e8d8;
+  margin-bottom: 8px;
+}
+.cover .big-word {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.15;
+  color: #d4a04a;
+  margin-bottom: 28px;
+}
+.cover .sub-line {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.6;
+  color: rgba(255,255,255,.6);
+}
+.cover .brand {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 18px;
+  letter-spacing: .18em;
+  color: rgba(255,255,255,.35);
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,.12);
+}
+
+/* Content cards */
+.card-content .title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.25;
+  color: #f0e8d8;
+  margin-bottom: 12px;
+}
+.card-content .title .gold {
+  color: #d4a04a;
+}
+.card-content .body-text {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 1.7;
+  color: rgba(255,255,255,.7);
+  max-width: 880px;
+}
+.card-content .body-text .highlight {
+  color: #f0e8d8;
+  font-weight: 500;
+}
+.card-content .body-text .quote {
+  color: #d4a04a;
+  font-weight: 500;
+}
+.card-content .page-num {
+  position: absolute;
+  right: 80px;
+  bottom: 80px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  letter-spacing: .12em;
+  color: rgba(255,255,255,.3);
+}
+</style>
+</head>
+<body>
+
+<!-- ===== COVER ===== -->
+<section class="card cover" id="xhs-cover">
+  <img class="bg" src="xhs-publish-pack/images/cover.jpg" alt="">
+  <div class="overlay" style="height:58%"></div>
+  <div class="content">
+    <p class="kicker">封面 · Cover</p>
+    <p class="main-title">读完《生气通天论》<br>它通篇在讲两个字</p>
+    <p class="big-word">自伤</p>
+    <p class="sub-line">你以为它在讲"天人合一"<br>其实通篇在讲——自伤</p>
+    <p class="brand">学渣读内经 · 生气通天论小结</p>
+  </div>
+</section>
+
+<!-- ===== CARD 1: 暗线 ===== -->
+<section class="card card-content" id="xhs-01">
+  <img class="bg" src="xhs-publish-pack/images/card-01.jpg" alt="">
+  <div class="overlay"></div>
+  <div class="content">
+    <p class="title">我以为讲"天和人"<br>其实讲"<span class="gold">自伤</span>"</p>
+    <div class="body-text">
+      <p>"生气通天"，我一直以为讲的是天怎么影响人。</p>
+      <p style="margin-top:16px">但原文反复出现的是另外两个字：<br><span class="quote">「卫气散解，此谓自伤。」</span></p>
+      <p style="margin-top:16px">它从头到尾在讲：<br><span class="highlight">你是怎么把自己搞坏的。</span></p>
+    </div>
+    <p class="page-num">01 / 08</p>
+  </div>
+</section>
+
+<!-- ===== CARD 2: 电源 ===== -->
+<section class="card card-content" id="xhs-02">
+  <img class="bg" src="xhs-publish-pack/images/card-02.jpg" alt="">
+  <div class="overlay"></div>
+  <div class="content">
+    <p class="title"><span class="gold">阳气</span>，是你这台机器的电源</p>
+    <div class="body-text">
+      <p><span class="quote">「阳气者，若天与日。」</span></p>
+      <p style="margin-top:16px">不是锦上添花的暖气，<br><span class="highlight">是底层电源。</span></p>
+      <p style="margin-top:12px">太阳没了不是某个零件坏，<br>是整机关机。</p>
+      <p style="margin-top:12px">而它的活儿是"卫外"——<br>像边防军守在体表。</p>
+    </div>
+    <p class="page-num">02 / 08</p>
+  </div>
+</section>
+
+<!-- ===== CARD 3: 别漏电 ===== -->
+<section class="card card-content" id="xhs-03">
+  <img class="bg" src="xhs-publish-pack/images/card-03.jpg" alt="">
+  <div class="overlay"></div>
+  <div class="content">
+    <p class="title">阴平阳秘——<br><span class="gold">不是五五开</span></p>
+    <div class="body-text">
+      <p>我一直以为理想是阴阳五五开。</p>
+      <p style="margin-top:12px">原文说：<span class="quote">「阳密乃固。」</span></p>
+      <p style="margin-top:16px"><span class="highlight">关键不在平衡，</span><br><span class="highlight">在阳气密不密。</span></p>
+      <p style="margin-top:12px">电要有，还得不漏。<br>旺而不密，是另一种崩溃。</p>
+    </div>
+    <p class="page-num">03 / 08</p>
+  </div>
+</section>
+
+<!-- ===== CARD 4: 门 ===== -->
+<section class="card card-content" id="xhs-04">
+  <img class="bg" src="xhs-publish-pack/images/card-04.jpg" alt="">
+  <div class="overlay"></div>
+  <div class="content">
+    <p class="title">风为百病之始<br>可门是<span class="gold">你自己开的</span></p>
+    <div class="body-text">
+      <p><span class="quote">「风者，百病之始也。」</span></p>
+      <p style="margin-top:12px">风不是最毒的，是"开门的"。</p>
+      <p style="margin-top:16px">但<span class="quote">「清静则肉腠闭拒」</span>——<br><span class="highlight">你安静，门就关着，<br>再大的风也进不来。</span></p>
+      <p style="margin-top:16px">那扇门，你自己开，<br>也你自己关。</p>
+    </div>
+    <p class="page-num">04 / 08</p>
+  </div>
+</section>
+
+<!-- ===== CARD 5: 煎厥与薄厥 ===== -->
+<section class="card card-content" id="xhs-05">
+  <img class="bg" src="xhs-publish-pack/images/card-05.jpg" alt="">
+  <div class="overlay"></div>
+  <div class="content">
+    <p class="title">煎厥与薄厥<br><span class="gold">下手的都是你</span></p>
+    <div class="body-text">
+      <p>煎厥——烦劳把阴精<br>像小火<span class="highlight">慢慢煎干</span>。</p>
+      <p style="margin-top:14px">薄厥——大怒让血<br><span class="highlight">一下冲上头</span>。</p>
+      <p style="margin-top:16px">一个慢火，一个猛火。<br><span class="quote">但点火的，都是你自己。</span></p>
+    </div>
+    <p class="page-num">05 / 08</p>
+  </div>
+</section>
+
+<!-- ===== CARD 6: 五味 ===== -->
+<section class="card card-content" id="xhs-06">
+  <img class="bg" src="xhs-publish-pack/images/card-06.jpg" alt="">
+  <div class="overlay"></div>
+  <div class="content">
+    <p class="title">养你的和伤你的<br>是<span class="gold">同一个东西</span></p>
+    <div class="body-text">
+      <p><span class="quote">「阴之所生，本在五味；<br>　阴之五宫，伤在五味。」</span></p>
+      <p style="margin-top:16px">养你的是酸苦甘辛咸，<br>伤你的也是。<br><span class="highlight">区别只在量。</span></p>
+      <p style="margin-top:14px">整篇最后落在四个字：<br><span class="gold">谨和五味。</span></p>
+    </div>
+    <p class="page-num">06 / 08</p>
+  </div>
+</section>
+
+<!-- ===== CARD 7: 没有一味药 ===== -->
+<section class="card card-content" id="xhs-07">
+  <img class="bg" src="xhs-publish-pack/images/card-07.jpg" alt="">
+  <div class="overlay"></div>
+  <div class="content">
+    <p class="title">它给的不是药方<br>是"<span class="gold">别拆自己</span>"清单</p>
+    <div class="body-text">
+      <p><span class="quote">「虽有贼邪，弗能害也。」</span></p>
+      <p style="margin-top:12px">邪一直都在，害得了你的<br>只有"自伤"。</p>
+      <p style="margin-top:16px"><span class="highlight">整篇没有一味药——</span><br>没教你吃什么，只教你"别"：<br>别不清静、别烦劳大怒、<br>别过量。</p>
+    </div>
+    <p class="page-num">07 / 08</p>
+  </div>
+</section>
+
+<!-- ===== CARD 8: 减法 ===== -->
+<section class="card card-content" id="xhs-08">
+  <img class="bg" src="xhs-publish-pack/images/card-08.jpg" alt="">
+  <div class="overlay"></div>
+  <div class="content">
+    <p class="title">它讲的是<span class="gold">减法</span><br>不是加法</p>
+    <div class="body-text">
+      <p>《内经》几乎不告诉你<br>补什么、练什么。</p>
+      <p style="margin-top:14px">它一直说：别拆什么、<br>别耗什么。</p>
+      <p style="margin-top:16px">"长有天命"——不多给你寿命，<br>只说：<span class="highlight">你本来能活的，</span><br><span class="highlight">别自己折损掉。</span></p>
+      <p style="margin-top:24px; font-size:30px; font-weight:500; color:#d4a04a;">挑一件"自伤"的事，停七天。</p>
+    </div>
+    <p class="page-num">08 / 08</p>
+  </div>
+</section>
+
+</body>
+</html>
