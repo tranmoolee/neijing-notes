@@ -1,0 +1,19 @@
+{
+  "ghost_draft": {
+    "status": "created",
+    "editor_url": "https://www.ileemoo.com/ghost/#/editor/post/6a209e0fccf9e1000124acf6",
+    "post_id": "6a209e0fccf9e1000124acf6",
+    "title": "每个脏腑都有一张\"身份证\"——金匮真言论开篇"
+  },
+  "wechat_draft": {
+    "status": "created",
+    "draft_media_id": "RZMihzsPBt_UWxA-8fXHL24tkJ5Eu5hUCaPfY3koVmY8N8_G54iA0lYDfbvbBupW",
+    "title": "五脏应四时",
+    "method": "clean_text_with_overlaid_images"
+  },
+  "xhs": {
+    "status": "image_pack_ready",
+    "images": "xhs-publish-pack/images/ (9 overlaid cards)"
+  },
+  "updated_at": "2026-06-03T23:40:00+02:00"
+}
