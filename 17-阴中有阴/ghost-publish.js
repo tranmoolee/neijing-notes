@@ -6,7 +6,7 @@ const { URL } = require('url');
 const GHOST_URL = process.env.GHOST_URL || "https://www.ileemoo.com";
 const GHOST_KEY = process.env.GHOST_ADMIN_API_KEY;
 const POST_DIR = path.resolve(__dirname);
-const IMG_DIR = path.join(POST_DIR, 'xhs-publish-pack', 'images');
+const IMG_DIR = path.join(POST_DIR, 'images');
 
 function jwtFromKey(keyStr) {
   const [id, secret] = keyStr.split(':');
