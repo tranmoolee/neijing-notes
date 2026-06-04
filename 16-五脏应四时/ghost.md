@@ -1,5 +1,5 @@
 ---
-title: 每个脏腑都有一张"身份证"——金匮真言论开篇
+title: 第十六篇：每个脏腑都有一张"身份证"
 slug: neijing-wuzang-ying-sishi
 status: draft
 tags: 学渣读内经, 黄帝内经, 中医学习, 金匮真言论

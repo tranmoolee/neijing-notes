@@ -71,11 +71,10 @@ function uploadImage(filePath) {
 async function main() {
   if (!GHOST_KEY) { console.error('❌ GHOST_ADMIN_API_KEY not set'); process.exit(1); }
 
-  // 1. Read ghost.md — properly parse ONLY the first YAML frontmatter block
+  // Read ghost.md — parse only first YAML frontmatter block
   const ghostMd = fs.readFileSync(path.join(POST_DIR, 'ghost.md'), 'utf-8');
   const lines = ghostMd.split('\n');
-  
-  // Find first --- and second ---
+
   let firstFm = -1, secondFm = -1;
   for (let i = 0; i < lines.length; i++) {
     if (lines[i].trim() === '---') {
@@ -83,8 +82,7 @@ async function main() {
       else if (secondFm === -1) { secondFm = i; break; }
     }
   }
-  
-  // Parse frontmatter
+
   let fm = {};
   if (firstFm !== -1 && secondFm !== -1) {
     for (let i = firstFm + 1; i < secondFm; i++) {
@@ -93,12 +91,10 @@ async function main() {
       if (idx > 0) fm[line.slice(0, idx).trim()] = line.slice(idx + 1).trim();
     }
   }
-  
-  // Body = everything after second ---
+
   const bodyLines = secondFm !== -1 ? lines.slice(secondFm + 1) : lines;
-  
-  const title = fm.title || '第十六篇';
-  const slug = fm.slug || 'neijing-wuzang-ying-sishi';
+  const title = fm.title || '第十七篇';
+  const slug = fm.slug || 'neijing-yin-zhong-you-yin';
   const tags = (fm.tags || '').split(',').map(s => s.trim()).filter(Boolean);
   const excerpt = fm.excerpt || '';
 
@@ -106,7 +102,7 @@ async function main() {
   console.log(`📖 Slug: ${slug}`);
   console.log(`📖 Body: ${bodyLines.length} lines`);
 
-  // 2. Upload all images
+  // Upload images
   console.log('\n📤 Uploading images...');
   const images = ['cover.jpg','card-01.jpg','card-02.jpg','card-03.jpg','card-04.jpg','card-05.jpg','card-06.jpg','card-07.jpg','card-08.jpg'];
   const urlMap = {};
@@ -121,55 +117,38 @@ async function main() {
       } else { console.log(`  ⚠️  ${name}: no url returned`); }
     } catch (e) { console.log(`  ❌ ${name}: ${e.message}`); }
   }
-  console.log(`   Total images uploaded: ${Object.keys(urlMap).length}/9`);
+  console.log(`   Total: ${Object.keys(urlMap).length}/9`);
 
-  // 3. Build the markdown body with CDN image URLs
+  // Build markdown body with CDN image URLs
   let mdBody = bodyLines.join('\n').trim();
-  
-  // First replace all ![alt](images/xxx) with ![alt](cdn_url)
   for (const [name, url] of Object.entries(urlMap)) {
     const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const regex = new RegExp(`\\(images/${escapedName}\\)`, 'g');
-    mdBody = mdBody.replace(regex, `(${url})`);
+    mdBody = mdBody.replace(new RegExp(`\\(images/${escapedName}\\)`, 'g'), `(${url})`);
   }
-  
-  // 4. Build Lexical document
+
+  // Lexical document
   const lexical = JSON.stringify({
     root: {
-      children: [{
-        type: 'markdown',
-        version: 1,
-        markdown: mdBody
-      }],
-      direction: null,
-      format: '',
-      indent: 0,
-      type: 'root',
-      version: 1
+      children: [{ type: 'markdown', version: 1, markdown: mdBody }],
+      direction: null, format: '', indent: 0, type: 'root', version: 1
     }
   });
 
-  // Also generate html as fallback
+  // HTML fallback
   let html = mdBody;
-  html = html.replace(/!\[(.*?)\]\(([^)]+)\)/g, (m, alt, src) => {
-    return `<figure class="kg-card kg-image-card"><img src="${src}" class="kg-image" alt="${alt}" loading="lazy"/></figure>`;
-  });
+  html = html.replace(/!\[(.*?)\]\(([^)]+)\)/g, '<figure class="kg-card kg-image-card"><img src="$2" class="kg-image" alt="$1" loading="lazy"/></figure>');
   html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
   html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
   html = html.replace(/^## (.+)$/gm, '<h2>$1</h2>');
   html = html.replace(/^> (.+)$/gm, '<blockquote><p>$1</p></blockquote>');
   html = html.replace(/^---$/gm, '<hr/>');
-  const htmlLines = html.split('\n').map(l => l.trim()).filter(Boolean);
-  const finalHtml = htmlLines.map(l => {
-    if (l.startsWith('<')) return l;
-    return `<p>${l}</p>`;
-  }).join('\n');
+  const finalHtml = html.split('\n').map(l => l.trim()).filter(Boolean)
+    .map(l => l.startsWith('<') ? l : `<p>${l}</p>`).join('\n');
 
-  console.log(`\n📄 Markdown body length: ${mdBody.length} chars`);
-  console.log(`📄 HTML body length: ${finalHtml.length} chars`);
+  console.log(`\n📄 Markdown: ${mdBody.length} chars`);
+  console.log(`📄 HTML: ${finalHtml.length} chars`);
 
-  // 5. Check if an existing draft with this slug exists, update it; otherwise create new
-  // Get existing post
+  // Create or update
   const existingPost = await new Promise((resolve, reject) => {
     const url = new URL(`/ghost/api/admin/posts/slug/${slug}/`, GHOST_URL);
     const opts = {
@@ -181,53 +160,24 @@ async function main() {
   });
 
   if (existingPost.posts && existingPost.posts[0]) {
-    // Update existing post
     const postId = existingPost.posts[0].id;
-    console.log(`\n📝 Updating existing Ghost draft (id=${postId})...`);
-    const postData = {
-      posts: [{
-        title, slug,
-        excerpt: excerpt || title,
-        status: 'draft',
-        feature_image: urlMap['cover.jpg'] || '',
-        tags: tags.map(t => ({ name: t })),
-        lexical,
-        html: finalHtml,
-        updated_at: existingPost.posts[0].updated_at,
-      }]
-    };
-    const result = await apiPut(`/ghost/api/admin/posts/${postId}/`, postData);
-    if (result.posts && result.posts[0]) {
-      const p = result.posts[0];
-      console.log(`✅ Ghost draft updated!`);
-      console.log(`   Title: ${p.title}`);
-      console.log(`   URL: ${GHOST_URL}/ghost/#/editor/post/${p.id}`);
-    } else {
-      console.error('❌ Failed:', JSON.stringify(result, null, 2).slice(0, 800));
-    }
+    console.log(`\n📝 Updating existing draft (id=${postId})...`);
+    const result = await apiPut(`/ghost/api/admin/posts/${postId}/`, {
+      posts: [{ title, slug, excerpt: excerpt || title, status: 'draft',
+        feature_image: urlMap['cover.jpg'] || '', tags: tags.map(t => ({ name: t })),
+        lexical, html: finalHtml, updated_at: existingPost.posts[0].updated_at }]
+    });
+    if (result.posts?.[0]) console.log(`✅ Updated! ${GHOST_URL}/ghost/#/editor/post/${result.posts[0].id}`);
+    else console.error('❌', JSON.stringify(result).slice(0, 800));
   } else {
-    // Create new
     console.log('\n📝 Creating new Ghost draft...');
-    const postData = {
-      posts: [{
-        title, slug,
-        excerpt: excerpt || title,
-        status: 'draft',
-        feature_image: urlMap['cover.jpg'] || '',
-        tags: tags.map(t => ({ name: t })),
-        lexical,
-        html: finalHtml,
-      }]
-    };
-    const result = await apiPost('/ghost/api/admin/posts/', postData);
-    if (result.posts && result.posts[0]) {
-      const p = result.posts[0];
-      console.log(`✅ Ghost draft created!`);
-      console.log(`   Title: ${p.title}`);
-      console.log(`   URL: ${GHOST_URL}/ghost/#/editor/post/${p.id}`);
-    } else {
-      console.error('❌ Failed:', JSON.stringify(result, null, 2).slice(0, 800));
-    }
+    const result = await apiPost('/ghost/api/admin/posts/', {
+      posts: [{ title, slug, excerpt: excerpt || title, status: 'draft',
+        feature_image: urlMap['cover.jpg'] || '', tags: tags.map(t => ({ name: t })),
+        lexical, html: finalHtml }]
+    });
+    if (result.posts?.[0]) console.log(`✅ Created! ${GHOST_URL}/ghost/#/editor/post/${result.posts[0].id}`);
+    else console.error('❌', JSON.stringify(result).slice(0, 800));
   }
 }
 
