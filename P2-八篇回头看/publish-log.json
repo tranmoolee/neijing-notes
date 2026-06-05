@@ -1,0 +1,38 @@
+{
+  "workflow": "v3",
+  "generated_at": "2026-06-05T00:00:00+02:00",
+  "steps": {
+    "images": {
+      "status": "pending",
+      "count": 0,
+      "style": "warm-film-guofeng-notext"
+    },
+    "overlay": {
+      "status": "pending",
+      "method": "social-card",
+      "output": null
+    },
+    "review": {
+      "status": "pending"
+    },
+    "xhs_pack": {
+      "status": "pending",
+      "path": "xhs-publish-pack/images/"
+    }
+  },
+  "ghost": {
+    "status": "pending",
+    "updated_at": null,
+    "editor_url": null,
+    "slug": "neijing-p2-stage2-review"
+  },
+  "wechat": {
+    "status": "pending",
+    "updated_at": null,
+    "draft_media_id": null,
+    "title": "第二阶段回头看：那张五行大表，根本不是用来背的"
+  },
+  "x": {
+    "status": "pending"
+  }
+}
