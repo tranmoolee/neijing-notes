@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="kraft-paper">
+<head>
+  <meta charset="utf-8">
+  <title>P2-八篇回头看 · Social Headers</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <style>
+    :root,[data-theme="kraft-paper"] {
+      --paper:     #eedfc7;
+      --paper-2:   #dfc9a8;
+      --ink:       #2a1e13;
+      --muted:     #755f49;
+      --line:      rgba(42,30,19,.24);
+      --accent:    #9b5a2e;
+      --accent-soft: #d5b58f;
+      --ink-rgb: 42,30,19;
+      --paper-rgb: 238,223,199;
+      --accent-rgb: 155,90,46;
+    }
+    :root{
+      --serif-zh:"Noto Serif SC","Songti SC","STSong",serif;
+      --serif-en:"Playfair Display","Noto Serif SC",serif;
+      --sans-zh:"Noto Sans SC",-apple-system,"PingFang SC","Microsoft YaHei UI",sans-serif;
+      --sans-en:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;
+      --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Consolas,monospace;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{background:#1a1a1a;font-family:var(--sans-zh);color:var(--ink);-webkit-font-smoothing:antialiased;padding:48px 24px;}
+    .sheet{display:flex;flex-direction:column;align-items:center;gap:40px;}
+    .poster{position:relative;background:var(--paper);color:var(--ink);overflow:hidden;isolation:isolate;}
+    .poster.wide{width:2100px;height:900px;}
+    .content{position:relative;width:100%;height:100%;z-index:2;display:flex;flex-direction:column;}
+    .mag-bg{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+    .grain{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.3;mix-blend-mode:multiply;background-image:radial-gradient(rgba(0,0,0,.04) 1px,transparent 1px);background-size:3px 3px;}
+    .paper-wash{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(var(--ink-rgb),.02),rgba(var(--ink-rgb),.06) 60%,rgba(var(--ink-rgb),.10));}
+
+    .frame-full{position:absolute;inset:0;z-index:0;overflow:hidden;margin:0;}
+    .frame-full img{width:100%;height:100%;object-fit:cover;display:block;}
+    .overlay-right{position:absolute;right:0;top:0;bottom:0;width:52%;background:linear-gradient(90deg,transparent 0%,rgba(42,30,19,.70) 30%,rgba(42,30,19,.88) 100%);z-index:1;}
+    .overlay-bottom{position:absolute;left:0;right:0;bottom:0;height:42%;background:linear-gradient(0deg,rgba(42,30,19,.82) 0%,transparent 100%);z-index:1;}
+
+    .kicker{font-family:var(--mono);font-size:17px;letter-spacing:.22em;text-transform:uppercase;color:rgba(var(--ink-rgb),.5);margin:0 0 10px;}
+    .h-display{font-family:var(--serif-zh);font-weight:500;line-height:1.06;letter-spacing:.04em;margin:0;color:var(--ink);}
+    .h-xl{font-family:var(--serif-zh);font-weight:500;line-height:1.10;letter-spacing:.03em;margin:0;color:var(--ink);}
+    .h-sub{font-family:var(--serif-en);font-style:italic;font-weight:400;color:var(--muted);margin:0;}
+    .lead{font-family:var(--serif-zh);font-weight:400;line-height:1.55;color:rgba(var(--ink-rgb),.82);margin:0;}
+    .meta{font-family:var(--mono);font-size:14px;letter-spacing:.20em;text-transform:uppercase;}
+
+    .poster.wide .h-display{font-size:112px;}
+    .poster.wide .h-xl{font-size:96px;}
+
+    .text-zone-right{position:absolute;right:90px;top:100px;bottom:120px;width:46%;z-index:3;display:flex;flex-direction:column;justify-content:center;}
+    .text-zone-center{position:absolute;left:100px;right:100px;top:0;bottom:80px;z-index:3;display:flex;flex-direction:column;justify-content:center;}
+
+    .rule-accent{height:2px;background:var(--accent);border:0;margin:0 0 18px;width:60px;}
+    .rule-white{height:2px;background:rgba(236,226,207,.25);border:0;margin:0 0 18px;width:56px;}
+
+    .issue-strip{position:absolute;left:100px;right:100px;bottom:32px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:14px;letter-spacing:.12em;text-transform:uppercase;z-index:3;border-top:1px solid rgba(42,30,19,.15);padding-top:14px;color:rgba(42,30,19,.5);}
+
+    .stack{display:flex;flex-direction:column;}
+    .gap-1{gap:12px;}.gap-2{gap:24px;}.gap-3{gap:36px;}
+  </style>
+</head>
+<body>
+  <main class="sheet">
+
+    <!-- POSTER 1: WeChat Header (21:9) -->
+    <section class="poster wide" id="wechat-header">
+      <canvas class="mag-bg" data-bg="ink-flow"></canvas>
+      <div class="grain"></div>
+      <figure class="frame-full">
+        <img src="hero.png" alt="books and desk" style="object-position:center 40%;">
+      </figure>
+      <div class="overlay-right"></div>
+      <div class="text-zone-right">
+        <p class="kicker" style="color:rgba(236,226,207,.45);">学渣读内经 · 第二阶段回头看</p>
+        <div class="rule-white" style="width:44px;"></div>
+        <h1 class="h-display" style="color:#f5f1e8;font-size:88px;line-height:1.10;">
+          那张「五行大表」<br>根本不是用来背的
+        </h1>
+        <p class="h-sub" style="color:rgba(236,226,207,.65);font-size:30px;margin-top:10px;">
+          第八到第十七篇 · 阶段总结
+        </p>
+        <div style="margin-top:22px;display:flex;gap:14px;align-items:center;">
+          <span class="meta" style="color:rgba(236,226,207,.35);">生气通天论</span>
+          <span style="width:4px;height:4px;border-radius:50%;background:rgba(236,226,207,.2);"></span>
+          <span class="meta" style="color:rgba(236,226,207,.35);">金匮真言论</span>
+        </div>
+      </div>
+      <div class="issue-strip" style="color:rgba(236,226,207,.35);border-color:rgba(236,226,207,.1);">
+        <span>先认账，再定位</span>
+        <span>—</span>
+        <span>2026 · 第二阶段</span>
+      </div>
+    </section>
+
+    <!-- POSTER 2: Ghost Feature Image (21:9) -->
+    <section class="poster wide" id="ghost-feature">
+      <canvas class="mag-bg" data-bg="ink-flow"></canvas>
+      <div class="grain"></div>
+      <figure class="frame-full">
+        <img src="hero.png" alt="books and desk" style="object-position:center 35%;filter:brightness(.60);">
+      </figure>
+      <div class="overlay-bottom"></div>
+      <div class="text-zone-center">
+        <p class="kicker" style="color:rgba(236,226,207,.45);margin-bottom:6px;">黄帝内经 · 第二阶段回头看</p>
+        <div class="rule-white" style="width:56px;"></div>
+        <h1 class="h-xl" style="color:#f5f1e8;font-size:100px;line-height:1.08;max-width:78%;">
+          第二阶段回头看
+        </h1>
+        <p class="lead" style="color:rgba(236,226,207,.65);font-size:30px;margin-top:12px;max-width:70%;">
+          读完八篇，我发现那张「五行大表」根本不是用来背的
+        </p>
+        <div style="margin-top:18px;display:flex;gap:14px;align-items:center;">
+          <span class="meta" style="color:rgba(236,226,207,.3);font-size:13px;">学渣读内经</span>
+          <span style="width:4px;height:4px;border-radius:50%;background:rgba(236,226,207,.15);"></span>
+          <span class="meta" style="color:rgba(236,226,207,.3);font-size:13px;">P2 · 十到十七篇</span>
+        </div>
+      </div>
+      <div class="issue-strip" style="color:rgba(236,226,207,.3);border-color:rgba(236,226,207,.08);">
+        <span>坐标 × 自伤 = 报警地图</span>
+        <span>—</span>
+        <span>下一站 · 阴阳应象大论</span>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="magazine-bg-webgl.js"></script>
+  <script>
+    (function(){
+      function cssVarRgb(n,f){var r=getComputedStyle(document.documentElement).getPropertyValue(n).trim();if(!r)return f;var p=r.split(',').map(function(x){return parseInt(x.trim(),10);});return p.length===3&&p.every(function(n){return!isNaN(n);})?p:f;}
+      function mount(){if(!window.MagazineBg||!window.MagazineBg.mount)return;var i=cssVarRgb('--ink-rgb',[42,30,19]),p=cssVarRgb('--paper-rgb',[238,223,199]),a=cssVarRgb('--accent-rgb',[155,90,46]);document.querySelectorAll('canvas.mag-bg').forEach(function(c){window.MagazineBg.mount(c,{ink:i,paper:p,accent:a,strength:0.26,frozenTime:12.5});});}
+      if(document.readyState==='complete')mount();else window.addEventListener('load',mount);
+    })();
+  </script>
+</body>
+</html>

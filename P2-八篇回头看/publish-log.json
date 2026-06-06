@@ -27,10 +27,16 @@
     "slug": "neijing-p2-stage2-review"
   },
   "wechat": {
-    "status": "pending",
-    "updated_at": null,
-    "draft_media_id": null,
-    "title": "第二阶段回头看：那张五行大表，根本不是用来背的"
+    "status": "draft_created",
+    "updated_at": "2026-06-06T06:45:35.014173+00:00",
+    "draft_media_id": "RZMihzsPBt_UWxA-8fXHL71Gw9IY-98icsXUJmivIrYvuNKhxWrwnipsIiN8LhE_",
+    "title": "第二阶段回头看：读完八篇，我发现那张\"五行大表\"根本不是用来背的",
+    "digest": "写在最前：这是我读《黄帝内经》的学习",
+    "method": "ghost_md_with_xhs_overlay_images",
+    "cover_source": "xhs-publish-pack/images/header-wechat.jpg",
+    "image_source": "xhs-publish-pack/images/ (overlaid text)",
+    "upload_method": "permanent_material + CDN",
+    "body_images": 8
   },
   "x": {
     "status": "pending"
