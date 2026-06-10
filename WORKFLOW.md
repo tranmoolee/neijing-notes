@@ -6,6 +6,16 @@
 
 ## 完整执行顺序
 
+### 0) 生成平台 markdown 稿（wechat.md / ghost.md）
+在生图/发布之前，`wechat.md`（公众号）和 `ghost.md`（Ghost）的 markdown 正文由 `article.md` 自动派生：
+```bash
+python3 .gen-platform.py "<post-dir>"        # 省略参数则全量重生成
+```
+- ghost.md 正文与 wechat.md 一致（"Ghost 跟随公众号"），仅多 frontmatter（title/slug/tags/excerpt/feature_image）。
+- 文末统一附 **AI 标识 + 健康免责 footer**（合规，规避"低创作度"判定）。
+- 新增篇目须先在 `.gen-platform.py` 的 `DATA` 字典登记 slug/tags/excerpt；改了 `article.md` 后重跑此脚本同步。
+- 本步只产出 markdown 稿件；下面的步骤 5/6 才是把它们 + 叠字图上传成 Ghost/微信草稿。
+
 ### 1) Pull 文章目录
 ```bash
 # 根据用户提示定位到目标文章目录
