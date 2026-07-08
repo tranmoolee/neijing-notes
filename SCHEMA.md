@@ -129,7 +129,8 @@
 2. 在文件夹内创建:`article.md` `publish.md` `images/` `audio/` `video/`
 3. 在 `README.md` 的系列目录表格里新增一行,状态改为 `🔲 待写`
 4. 写完后状态改为 `✅ 已完成`
-5. git commit,push 到 main 分支
+5. 在根目录 `.gen-platform.py` 的 `DATA` 字典登记 slug/tags/excerpt,运行 `python3 .gen-platform.py "<文件夹>"` 派生 `wechat.md` / `ghost.md`(详见 CLAUDE.md 与 WORKFLOW.md)
+6. git commit,push 到 main 分支
 
 ---
 

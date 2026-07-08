@@ -15,16 +15,21 @@
 neijing-notes/
 ├── README.md          ← 项目说明(本文件)
 ├── SCHEMA.md          ← Agent 读取规范(结构说明)
+├── WORKFLOW.md        ← 发布工作流(生图→叠字→审核→Ghost/公众号草稿)
+├── .gen-platform.py   ← 由 article.md 派生 wechat.md / ghost.md 的脚本
 ├── 00-序/
-│   ├── article.md     ← 博客正文(Markdown)
-│   ├── publish.md     ← 各平台发布素材(小红书图文 + 配图 Prompt)
-│   ├── images/        ← 生成的配图(命名规则见 SCHEMA.md)
-│   ├── audio/         ← 音频文件(播客/语音稿)
-│   └── video/         ← 视频文件(剪辑素材/成片)
+│   ├── article.md            ← 博客正文(母稿,Markdown)
+│   ├── publish.md            ← 各平台发布素材(小红书图文 + 配图 Prompt)
+│   ├── images/               ← 生成的配图(命名规则见 SCHEMA.md)
+│   ├── audio/                ← 音频文件(播客/语音稿)
+│   ├── video/                ← 视频文件(剪辑素材/成片)
+│   ├── ghost.md              ← Ghost 发布稿(脚本派生,含 frontmatter)
+│   ├── wechat.md             ← 公众号发布稿(脚本派生)
+│   ├── wechat.publish.html   ← 公众号排版 HTML
+│   ├── x.md                  ← X/Twitter 线程稿
+│   ├── xhs-publish-pack/     ← 小红书手机手发包(图片+文案)
+│   └── publish-log.json      ← 各平台发布状态记录
 ├── 01-法于阴阳/
-├── 02-古人骂街/
-├── 03-女七男八/
-├── 04-四种人/
 └── ...
 ```
 
@@ -32,11 +37,17 @@ neijing-notes/
 
 | 文件 | 用途 |
 |---|---|
-| `article.md` | 博客正文,直接发布到 Ghost |
+| `article.md` | 博客正文母稿,其他平台稿由它派生 |
 | `publish.md` | 拆分为:① 小红书 9 图卡文字 ② 配图生成 Prompt ③ 发布正文 ④ 标签 |
 | `images/` | 配图按卡片编号命名:`cover.jpg` `card-01.jpg` … |
 | `audio/` | 音频按用途命名:`podcast.mp3` `voiceover.mp3` |
 | `video/` | 视频按平台命名:`xiaohongshu.mp4` `bilibili.mp4` |
+| `ghost.md` / `wechat.md` | 平台稿,由 `.gen-platform.py` 从 `article.md` 自动派生,勿手改正文 |
+| `publish-log.json` | 各平台发布状态记录 |
+
+## 写作参考
+
+- `CHUANMU-故事化写作协议-v1.md` — 故事化写作协议:选题反差切口、六段骨架、证据规则、发布前自检
 
 ## 系列目录
 

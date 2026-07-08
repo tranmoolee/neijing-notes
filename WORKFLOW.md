@@ -19,7 +19,7 @@ python3 .gen-platform.py "<post-dir>"        # 省略参数则全量重生成
 ### 1) Pull 文章目录
 ```bash
 # 根据用户提示定位到目标文章目录
-cd /Users/tranmoo/neijing-notes
+cd /Users/tranmoo/Projects/neijing-notes
 git pull origin main
 # 确认目标目录存在（如 "生气通天论-小结"）
 ```
